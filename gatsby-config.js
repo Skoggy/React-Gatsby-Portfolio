@@ -9,6 +9,7 @@ module.exports = {
     title: "Christopher's Portfolio",
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     {
       resolve: "gatsby-source-sanity",
       options: {

@@ -35,8 +35,13 @@ export default {
             description: 'Describe your project',
         },
         {
-            title: 'URL',
-            name: 'URL',
+            title: 'GithubURL',
+            name: 'githubURL',
+            type: 'url'
+        },
+        {
+            title: 'DeployedURL',
+            name: 'deployedURL',
             type: 'url'
         }
     ]
