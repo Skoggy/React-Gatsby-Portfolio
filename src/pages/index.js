@@ -3,6 +3,14 @@ import styled from 'styled-components'
 
 
 // styles
+const LandingPageStyles = styled.div`
+  min-height: 75vh; // height of the browser viewport
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+`
 
 
 // markup
@@ -10,10 +18,10 @@ const IndexPage = () => {
   return (
     <>
 
-      <div className>
+      <LandingPageStyles>
 
-        <h1 class="my-name">Hi, My Name Is Chris.. I'm A Full Stack Web Developer</h1>
-      </div>
+        <h1>Hi, My Name Is Chris.. I'm A Full Stack Web Developer</h1>
+      </LandingPageStyles>
     </>
 
 

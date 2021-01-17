@@ -24,6 +24,7 @@ export default function ProjectPage({ data }) {
 export const query = graphql`
   query($slug: String!) {
     project: sanityProject(slug: { current: { eq: $slug } }) {
+      
       name
       id
       description
