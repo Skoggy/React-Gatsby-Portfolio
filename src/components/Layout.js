@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
-// import Footer from './Footer';
+import Footer from './Footer';
 import Nav from './Nav';
 import GlobalStyles from '../styles/GlobalStyles'
 import bg from '../images/bg.png';
@@ -26,8 +26,9 @@ export default function Layout({ children }) {
             <ContentStyles>
                 <Nav />
                 {children}
-
+                <Footer />
             </ContentStyles>
+
 
         </>
     );

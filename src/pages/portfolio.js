@@ -10,7 +10,7 @@ const ProjectGridStyles = styled.div`
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
-  // grid-auto-rows: auto auto 500px;
+   grid-auto-rows: auto auto 500px;
 `;
 
 
@@ -24,8 +24,8 @@ const ProjectStyles = styled.div`
   h2 {
    
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: -2rem;
+    font-size: 2rem;
+    
     position: relative;
     z-index: 2;
   }
