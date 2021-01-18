@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Home from '../components/ContactForm'
 
 
 export default function ContactPage() {
     return (
-        <div>
 
-            <div>Hey Im the contact Page</div>
-
-        </div>)
-
+        <Home />
+    )
 }
 
