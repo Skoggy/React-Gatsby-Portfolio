@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import profilePic from '../images/profile.jpg'
 
+const ProfilePicStyles = styled.img`
+max-height:250px;
+max-width: 300px;
+border-radius: 30px;
+`
 
 
 export default function AboutPage() {
     return (
         <>
-
             <div className="container">
                 <div className="row">
                     <div className="col-md-10">
@@ -15,7 +20,7 @@ export default function AboutPage() {
                 </div>
                 <div className="row">
                     <div className="col-md-5">
-
+                        <ProfilePicStyles src={profilePic} alt="profile pic" />
                     </div>
                     <div className="col-md-7">
                         <p>
@@ -25,8 +30,9 @@ export default function AboutPage() {
                             into a field that is not only a fast growing one, but also one that interests me greatly.
                 </p>
                         <p>Here is a link to my
-                        Resume
-                    </p>
+                    <a
+                                href="https://docs.google.com/document/d/1SZIXruqRdDWIeGSZdeir_cHqRU4UZq0yK1B9fxO7zNU/edit?usp=sharing"> Resume</a>
+                        </p>
                     </div>
                 </div>
                 <div className="row">
