@@ -1,6 +1,18 @@
 import React from "react"
 import { useForm } from "react-hook-form"
+import styled from 'styled-components';
 import { navigate } from "gatsby"
+
+const ContactStyles = styled.form`
+input {
+    width:30rem;
+    height:2rem;
+}
+textarea {
+    width: 30rem;
+}
+`
+
 const Home = () => {
     // Initiate forms
     const { register, handleSubmit, errors, reset } = useForm()
@@ -30,7 +42,7 @@ const Home = () => {
         event.preventDefault()
     }
     return (
-        <form
+        <ContactStyles
             onSubmit={handleSubmit(handlePost)}
             name="contact-form"
             method="POST"
@@ -84,7 +96,7 @@ const Home = () => {
             <div>
                 <button type="submit">Submit</button>
             </div>
-        </form>
+        </ContactStyles>
     )
 }
 export default Home

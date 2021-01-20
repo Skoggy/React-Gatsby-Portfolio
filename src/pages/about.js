@@ -15,7 +15,7 @@ export default function AboutPage() {
                 </div>
                 <div className="row">
                     <div className="col-md-5">
-                        <img src="Assets/IMG_6309.JPG" className="img-fluid" alt="My Picture" />
+
                     </div>
                     <div className="col-md-7">
                         <p>
@@ -48,3 +48,4 @@ export default function AboutPage() {
         </>
     )
 }
+

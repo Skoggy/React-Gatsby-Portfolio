@@ -15,7 +15,9 @@ const NavStyles = styled.nav`
     align-items: center;
     text-align: center;
     list-style: none;
-    background: lightgrey;
+    background: var(--black);
+    font-size: 1.75rem;
+    text-decoration: none;
   }
   
   

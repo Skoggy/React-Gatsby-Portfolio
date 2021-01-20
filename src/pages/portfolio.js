@@ -9,25 +9,27 @@ const ProjectGridStyles = styled.div`
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
-   grid-auto-rows: auto auto 500px;
+/* 
+   grid-auto-rows: auto auto 500px; */
 `;
 
 
 const ProjectStyles = styled.div`
+
   a {
     text-decoration: none;
   }
   .gatsby-image-wrapper {
+   
     height: 400px;
   }
   h2 {
    
     text-align: center;
     font-size: 2rem;
+   align-items: center; 
+   
     
-    position: relative;
-    z-index: 2;
   }
   .description {
     
@@ -38,6 +40,8 @@ const ProjectStyles = styled.div`
     position: relative;
     text-align: center;
   }
+  
+  
 `;
 
 export default function PortfolioPage({ data, pageContext }) {
@@ -83,7 +87,7 @@ query($skip: Int = 0, $pageSize: Int = 3) {
       description
       image {
           asset {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth:1000) {
               ...GatsbySanityImageFluid
             }
           }
