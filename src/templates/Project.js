@@ -23,10 +23,10 @@ p{
 }
 `
 
-const ImageStyles = styled.image`
-max-height: 300px;
-max-width: 300px;
-`
+// const ImageStyles = styled.image`
+// max-height: 300px;
+// max-width: 300px;
+// `
 
 export default function ProjectPage({ data }) {
   const { project } = data;

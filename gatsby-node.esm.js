@@ -5,7 +5,7 @@ import path from 'path';
 async function turnProjectsIntoPages({ graphql, actions }) {
   // Get a template for this page
   const projectTemplate = path.resolve('./src/templates/Project.js');
-  // Query all pizzas
+  // Query all projects
   const { data } = await graphql(`
     query {
       projects: allSanityProject {
